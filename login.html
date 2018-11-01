@@ -1,0 +1,24 @@
+<html>
+<head><title> Login page </title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+	<div class="back_img">
+		<form action="../web_pages/test_user.php" class="form" method = "post">
+	    	    <h1>Login</h1><br /><br />
+		    <label><b>Login as</b></label><br />
+		    <select class = "menu" id = "list" name = "role">  
+			<option value = "Admin">Admin</option>
+			<option value = "Presenter">Presenter</option>
+			<option value = "Reviewer">Reviewer</option>
+		    </select><br /><br />
+		    <label><b>Email</b></label><br />
+    		    <input type="text" placeholder="Enter Email" name="mem_id" id = "email" required><br /><br />
+		    <label><b>Password</b></label><br />
+    		    <input type="password" placeholder="Enter Password" name="psw" id = "psw" required><br /><br />
+		    <button type="submit" class="submit">Login</button>	
+  		</form>
+	</div>
+</body>
+</html>

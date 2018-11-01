@@ -1,0 +1,135 @@
+.container_top {
+    position: relative;
+    text-align: center;
+}
+
+.top-right {
+   position: absolute;
+   top: 100px;
+   right: 700px;
+   font-size: 70px;
+   color: green;
+
+
+}
+
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    float: left;
+    margin-left: inherit;
+    border-radius: 5px;
+    width: 20%;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    font-size: 25px;
+    
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin-left: 6.7%;
+    margin-right: 6.5%;
+    float: left;
+    border-radius: 5px;
+    font-size: 25px;
+     
+}
+
+.card3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    float: right;
+    border-radius: 5px;
+    font-size: 25px;
+    
+}
+
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 100px 160px;
+}
+
+.p1{
+    padding: 5px 20px;
+}
+
+.p2{
+    padding: 5px 20px;
+}
+
+.p3{
+    padding: 5px 20px;
+}
+
+.image {
+    position: relative;
+}
+
+.icon {
+    position: relative;
+    left: 0;
+    font-size: 45px; 
+    cursor: pointer;
+}
+
+.menu_text {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

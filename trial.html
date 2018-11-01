@@ -1,0 +1,137 @@
+<html>
+<head><title>Reviewer_home Page</title>
+<link rel="stylesheet" type="text/css" href="trial.css" />  
+<script type = "text/javascript" src = "trial.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+	<div class="back_img">
+	<div class="topnav">
+		<h2 class = " heading"> eventmaster.</h2>
+		<div class="topnav-right">
+ 			<a id = "a1" href="home.html" onclick = "changeColor(1)">HOME</a>
+  			<a id = "a3" href="terms.html" onclick = "changeColor(3)" >TERMS AND CONDITIONS</a> 
+			<a id = "a4" href="privacy.html" onclick = "changeColor(4)" >PRIVACY POLICY</a>
+			<a id = "a5" href="about.html"onclick = "changeColor(5)" >ABOUT</a>
+  			<a id = "a6" href="contact.html" onclick = "changeColor(6)">CONTACT</a>
+			<button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">  LOGIN  </button>
+  		</div>
+	</div>
+	</div>
+	
+	<div class = "para_heading">GET INSPIRED ON THIS</div>
+	<div class = "para_heading">UNIQUE SUBJECT</div>
+	<p class = "paragraph">			
+	A global platform to list, update & promote <br />upcoming conferences,events, seminars.With over.<br />100,000 registered subscribers.Our users come from<br />academic as well as non-academic backgrounds.<br /> including industry experts, seasoned professors & <br />research fellow from various universities.<br /><button class="button2 " onclick="document.getElementById('id02').style.display='block'" style="width:auto;">  REGISTER  </button> </p>
+
+
+
+<div id="id01" class="modal">
+  	<form action="test_user.php" class="modal-content animate" method = "post">
+	<div class="imgcontainer">
+      		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+		    <div class="container">
+	    	    <h1 class = "login">LOGIN</h1><br /><br />
+		    <label><b>Login as</b></label><br />
+		    <select class = "menu" id = "list" name = "role">  
+			<option value = "Admin">Admin</option>
+			<option value = "Presenter">Presenter</option>
+			<option value = "Reviewer">Reviewer</option>
+		    </select><br /><br />
+		    <label><b>Email</b></label><br />
+    		    <input type="text" placeholder="Enter Email" name="mem_id" id = "email" required><br /><br />
+		    <label><b>Password</b></label><br />
+    		    <input type="password" placeholder="Enter Password" name="psw" id = "psw" required><br /><br />
+		    <button type="submit" class="submit">Login</button>	
+		    </div>
+		    
+		    <div class="container" style="background-color:#f1f1f1">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    		    </div>
+  	</form>
+</div>  
+
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="register.php" method = "post">
+    <div class="container">
+      <h1>Register your paper</h1>
+      <p>Please fill in this form to register your paper.</p>
+   
+      <label for="email"><b>First Name</b></label>
+      <input type="text" placeholder="Enter first name" name="fname" required>
+
+      <label for="psw"><b>Middle Name</b></label>
+      <input type="text" placeholder="Enter middle name" name="mname" >
+	
+      <label for="lname"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter last name" name="lname" required>
+
+      <label for="psw"><b>Date of birth</b></label>
+      <input type="date" placeholder="Enter date of birth in yyyy/mm/dd form" name="dob" required>
+    
+      <label for="psw"><b>Pan number</b></label>
+      <input type="text" placeholder="Enter pan number" name="pan" required>
+
+      <label for="psw-repeat"><b>Phone</b></label>
+      <input type="text" placeholder="Enter Phone" name="phone" required>
+
+      <label for="psw"><b>Content of the paper</b></label>
+      <input type="text" placeholder="Enter content" name="content" required>
+
+      <label for="psw"><b>Category of paper</b></label>
+      <input type="text" placeholder="Enter category" name="category" required>
+
+      <label for="psw"><b>Title</b></label>
+      <input type="text" placeholder="Enter tite" name="title" required>
+      
+      <label for="psw"><b>Journal ID</b></label>
+      <input type="text" placeholder="Enter journal id" name="j_id" required>
+     
+      <label for="psw"><b>Topic</b></label>
+      <input type="text" placeholder="Enter topic" name="topic" required>
+
+      <label for="psw"><b>Year of publication</b></label>
+      <input type="text" placeholder="Enter year of publication" name="year" required>
+
+      <label for="psw-repeat"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+        <button type="submit" class="signupbtn" name = "submit">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
+

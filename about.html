@@ -1,0 +1,73 @@
+<html>
+<head><title>Terms and conditions</title>
+<link rel="stylesheet" type="text/css" href="home.css" />  
+<script type = "text/javascript" src = "trial.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+	<div class="back_img">
+		<div class="topnav">
+		<h2 class = " heading"> Eventmaster.</h2>
+		<div class="topnav-right">
+ 			<a id = "a1" href="home.html" onclick = "changeColor(1)">HOME</a>
+  			<a id = "a3" href="terms.html" onclick = "changeColor(3)" >TERMS AND CONDITIONS</a> 
+			<a id = "a4" href="privacy.html" onclick = "changeColor(4)" >PRIVACY POLICY</a>
+			<a id = "a5" class = "active" href="#" onclick = "changeColor(5)" >ABOUT</a>
+  			<a id = "a6" href="contact.html" onclick = "changeColor(6)">CONTACT</a>
+			<button class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">  LOGIN  </button>
+  		</div>
+		</div>
+	</div>
+	<h2 class="section-title" data-ix="page-header-fade-in" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms, transform 500ms;">ABOUT US</h2>
+	<div class="section-divider" data-ix="page-header-fade-in-2" style="opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;"></div>
+<p class = "para">Eventmanager is the global leader which provides the best opportunity to promote the events and provides the most trusted information about upcoming conferences, events, seminars and academic workshops globally. Our motto is to make organize events easy and simple to promote. Our dedicated team helps event organizers to make their conferences easy to organize. We try to add all international and national conferences worldwide form the genuine organizers every day.<br /><br />
+
+<b>Our aim:</b><br />
+
+To provide the best updated information of all upcoming conferences to our viewers.
+
+To provide the best platform to promote all conferences of the Organizers worldwide.
+
+To reach out to every single potential participant and provide, absolute correct information about the conferences and events to register and participate.</p>
+
+<div id="id01" class="modal">
+  	<form action="test_user.php" class="modal-content animate" method = "post">
+	<div class="imgcontainer">
+      		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+		    <div class="container">
+	    	    <h1 class = "login">LOGIN</h1><br /><br />
+		    <label><b>Login as</b></label><br />
+		    <select class = "menu" id = "list" name = "role">  
+			<option value = "Admin">Admin</option>
+			<option value = "Presenter">Presenter</option>
+			<option value = "Reviewer">Reviewer</option>
+		    </select><br /><br />
+		    <label><b>Email</b></label><br />
+    		    <input type="text" placeholder="Enter Email" name="mem_id" id = "email" required><br /><br />
+		    <label><b>Password</b></label><br />
+    		    <input type="password" placeholder="Enter Password" name="psw" id = "psw" required><br /><br />
+		    <button type="submit" class="submit">Login</button>	
+		    </div>
+		    
+		    <div class="container" style="background-color:#f1f1f1">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    		    </div>
+  	</form>
+</div>  
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
+
+
